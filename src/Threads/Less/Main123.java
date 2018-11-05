@@ -19,7 +19,5 @@ public class Main123 {
             e.printStackTrace();
         }
         System.out.println(listThread.size());
-
-
     }
 }
