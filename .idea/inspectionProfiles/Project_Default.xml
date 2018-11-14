@@ -536,7 +536,9 @@
     <inspection_tool class="CheckedExceptionClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ClashingGetters" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ClashingTraitMethods" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="ClassComplexity" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ClassComplexity" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_limit" value="80" />
+    </inspection_tool>
     <inspection_tool class="ClassCoupling" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="m_includeJavaClasses" value="false" />
       <option name="m_includeLibraryClasses" value="false" />
@@ -1073,7 +1075,9 @@
     <inspection_tool class="GroovyFallthrough" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="GroovyGStringKey" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="GroovyIfStatementWithIdenticalBranches" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="GroovyIfStatementWithTooManyBranches" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="GroovyIfStatementWithTooManyBranches" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
     <inspection_tool class="GroovyInArgumentCheck" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="GroovyInfiniteLoopStatement" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="GroovyInfiniteRecursion" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -1393,7 +1397,9 @@
     <inspection_tool class="JDBCResource" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="insideTryAllowed" value="false" />
     </inspection_tool>
-    <inspection_tool class="JNDIResource" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JNDIResource" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="insideTryAllowed" value="false" />
+    </inspection_tool>
     <inspection_tool class="JSAccessibilityCheck" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="JSAnnotator" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="JSArrowFunctionBracesCanBeRemoved" enabled="true" level="INFORMATION" enabled_by_default="true" />
@@ -1811,7 +1817,9 @@
       <option name="ignoreBooleanMethods" value="false" />
       <option name="onlyWarnOnBaseMethods" value="true" />
     </inspection_tool>
-    <inspection_tool class="NonCommentSourceStatements" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="NonCommentSourceStatements" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_limit" value="30" />
+    </inspection_tool>
     <inspection_tool class="NonExceptionNameEndsWithException" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NonFinalClone" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NonFinalFieldInEnum" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1828,7 +1836,13 @@
     </inspection_tool>
     <inspection_tool class="NonPublicClone" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NonReproducibleMathCall" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="NonSerializableFieldInSerializableClass" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="NonSerializableFieldInSerializableClass" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+      <option name="ignoreAnonymousInnerClasses" value="false" />
+      <option name="superClassString" value="" />
+    </inspection_tool>
     <inspection_tool class="NonSerializableObjectBoundToHttpSession" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NonSerializableObjectPassedToObjectStream" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NonSerializableServiceParameters" enabled="true" level="ERROR" enabled_by_default="true" />
@@ -2218,7 +2232,7 @@
     <inspection_tool class="SerialPersistentFieldsWithWrongSignature" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SerialVersionUIDNotStaticFinal" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SerializableDeserializableClassInSecureContext" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="SerializableHasSerialVersionUIDField" enabled="true" level="ERROR" enabled_by_default="true">
+    <inspection_tool class="SerializableHasSerialVersionUIDField" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="ignoreAnonymousInnerClasses" value="false" />
       <option name="superClassString" value="" />
     </inspection_tool>
@@ -2226,7 +2240,7 @@
       <option name="ignoreAnonymousInnerClasses" value="false" />
       <option name="superClassString" value="" />
     </inspection_tool>
-    <inspection_tool class="SerializableInnerClassHasSerialVersionUIDField" enabled="true" level="ERROR" enabled_by_default="true">
+    <inspection_tool class="SerializableInnerClassHasSerialVersionUIDField" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="ignoreAnonymousInnerClasses" value="false" />
       <option name="superClassString" value="" />
     </inspection_tool>
@@ -2536,7 +2550,9 @@
       <option name="m_ignoreInEquals" value="true" />
       <option name="ignoreInAssert" value="false" />
     </inspection_tool>
-    <inspection_tool class="ThrowCaughtLocally" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ThrowCaughtLocally" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoreRethrownExceptions" value="false" />
+    </inspection_tool>
     <inspection_tool class="ThrowFromFinallyBlock" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ThrowFromFinallyBlockJS" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ThrowableNotThrown" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -2840,17 +2856,6 @@
       </option>
     </inspection_tool>
     <inspection_tool class="gwtRawAsyncCallback" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false">
-      <option name="LOCAL_VARIABLE" value="true" />
-      <option name="FIELD" value="true" />
-      <option name="METHOD" value="true" />
-      <option name="CLASS" value="true" />
-      <option name="PARAMETER" value="true" />
-      <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
-      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
-      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
-      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
-      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
-    </inspection_tool>
+    <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>
